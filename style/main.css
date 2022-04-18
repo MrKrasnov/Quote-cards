@@ -1,0 +1,96 @@
+@import url(./fonts/fonts.css) all;
+
+:root {
+    --mainColor: #aae4aa;
+    --mainFont: 'Oswald', sans-serif;
+}
+
+body {
+    height: 1000px;
+    overflow: hidden;
+}
+
+.btn {
+    display: block;
+    width: 300px;
+    background: #c99494;
+    margin: 30px auto;
+    font-family: var(--mainFont);
+    font-size: 2.3vw;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--mainColor);
+    background-image: url(../img/night.svg);
+    height: 50px;
+    width: 50px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0;
+}
+
+.scene {
+    background: var(--mainColor);
+    width: 700px;
+    min-height: 200px;
+    max-height: 400px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+@media(max-width: 1000px) {
+    .scene {
+        min-height: 100px;
+        max-height: 400px;
+    }
+}
+
+p {
+    font-family: var(--mainFont);
+    font-size: 2vw;
+}
+
+small {
+    display: inherit;
+    text-align: right;
+    font-family: 'Square Peg', cursive;
+    font-size: 3vw;
+}
+
+@media(max-width: 800px) {
+    small {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+}
+
+@media(max-width: 400px) {
+    small {
+        font-size: 6vw;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    .btn {
+        font-size: 4vw;
+    }
+}
