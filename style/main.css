@@ -1,4 +1,5 @@
 @import url(./fonts/fonts.css) all;
+@import url(./preloader/preloader.css) all;
 
 :root {
     --mainColor: #aae4aa;
@@ -28,11 +29,18 @@ body {
     top: 20px;
     right: 20px;
     background: var(--mainColor);
-    background-image: url(../img/night.svg);
     height: 50px;
     width: 50px;
     border: 2px solid #000000;
     border-radius: 10px;
+}
+
+.toggle_night {
+    background-image: url(../img/night.svg);
+}
+
+.toggle_sun {
+    background-image: url(../img/sun.svg);
 }
 
 .container {
@@ -40,6 +48,13 @@ body {
     justify-content: center;
     align-items: center;
     padding: 200px 0;
+    padding-top: 250px;
+}
+
+@media(max-width: 1000px) {
+    .container {
+        padding-top: 300px;
+    }
 }
 
 .scene {
@@ -56,6 +71,12 @@ body {
     .scene {
         min-height: 100px;
         max-height: 400px;
+    }
+}
+
+@media(max-width: 700px) {
+    .scene {
+        width: 90%;
     }
 }
 
