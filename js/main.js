@@ -36,19 +36,12 @@ function quoteWritter() {
             small.textContent = quote[1];
             document.querySelector('.scene').append(p);
             document.querySelector('.scene').append(small);
+            setTimeout(quoteWritter, 5000)
         });
 }
-
-
 
 document.querySelector('.btn').onclick = () => {
     document.querySelector('.btn').remove();
     document.querySelector('.preloader').style.display = "block";
-    setInterval(quoteWritter, 2000);
+    setTimeout(quoteWritter, 500)
 };
-
-
-
-
-
-

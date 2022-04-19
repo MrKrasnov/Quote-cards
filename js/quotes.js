@@ -32,4 +32,3 @@ export let quotes = [
         'Socrates'
     ],
 ];
-
